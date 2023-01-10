@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,24 +11,38 @@ namespace GeometryExample
     {
         public Cylinder() { }
 
-        public float Radius { get; set; }
+        public double Radius { get; set; }
 
-        public float Height { get; set; }  
+        public double Height { get; set; }  
+
+        public double BaseArea { get; set; }
+
+        public double LateralArea { get; set; }
+
+        public double TotalArea { get; set; }
+
+        public double Volume { get; set; }
         public void Process()
         {
-            float BaseArea = (float)(Radius * Radius * Math.PI);
+             BaseArea = (NFloat)(Radius * Radius * Math.PI);
 
-            float LateralArea = (float)(2 * Math.PI * Radius * Height);
+             LateralArea = (float)(2 * Math.PI * Radius * Height);
 
-            float TotalArea = (float)(2 * Math.PI * Radius * (Height + Radius));
+             TotalArea = (float)(2 * Math.PI * Radius * (Height + Radius));
 
-            float Volume = (float)(Math.PI * Radius * Radius * Height);
+             Volume = (float)(Math.PI * Radius * Radius * Height);
 
         }
 
         public void Result()
         {
-
+            Console.WriteLine("Enter the dimentstions of the cylinder");
+            Console.WriteLine("Radius : "+Radius);
+            Console.WriteLine("Height : "+Height);
+            Console.WriteLine("Cylinder Characteristics");
+            Console.WriteLine("Radius : " + Radius + " Height : " + Height);
+            Console.WriteLine("Base: "+BaseArea+" | "+" Latera: "+LateralArea + " | " +" Total: "+TotalArea + " | " +" Volume: "+Volume);
+            
         }
     }
 }
