@@ -6,11 +6,11 @@ c1.Height = 22.48;
 c1.Process();
 c1.Result();
 
-Tiger tg = new Tiger();
+Tiger t = new Tiger();
 
-tg.SetMe("Lion",100);
-tg.Show();
+t.SetMe("Tiger",100);
+t.Show();
 
 Lion l = new Lion();
-l.SetMe("Tiger", 200);
+l.SetMe("Lion", 200);
 l.Show();
