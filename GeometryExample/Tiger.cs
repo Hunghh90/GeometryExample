@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeometryExample
+namespace GeometryExample.Exercise2
 {
     public class Tiger : Animal
     {
