@@ -24,7 +24,7 @@ namespace GeometryExample
         public double Volume { get; set; }
         public void Process()
         {
-             BaseArea = (NFloat)(Radius * Radius * Math.PI);
+             BaseArea = (float)(Radius * Radius * Math.PI);
 
              LateralArea = (float)(2 * Math.PI * Radius * Height);
 
