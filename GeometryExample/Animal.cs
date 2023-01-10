@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace GeometryExample
 {
-    internal interface animal
+    public abstract class Animal
     {
+        public abstract string Name { get; set; }
+
+        public abstract double Weight { get; set; }
+
+        public abstract void SetMe(string name, double weight);
+
+
+
+        public abstract void Show();
+        
     }
 }

@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace GeometryExample
 {
-    internal class Tiger
+    public class Tiger : Animal
     {
+        public override string Name { get; set; }
+        public override double Weight { get ; set; }
+
+        public override void SetMe(string name, double weight)
+        {
+            Name = name; Weight = weight;
+        }
+
+        public override void Show()
+        {
+            Console.WriteLine("Name: " + Name + ", Weight: " + Weight);
+        }
     }
 }
